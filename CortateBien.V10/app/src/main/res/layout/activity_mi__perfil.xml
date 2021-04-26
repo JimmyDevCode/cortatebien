@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.Mi_perfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/idUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="ID "
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario: "
+            android:textStyle="bold"
+            android:textColor="@color/Gris_3"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/nombreUsuarioPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NombreDeUsuario: "
+            android:textSize="20sp"
+            android:textColor="@color/Negro_0"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:     "
+            android:textStyle="bold"
+            android:textColor="@color/Gris_3"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/correoUsuarioPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="correo"
+            android:paddingTop="16dp"
+            android:textSize="20sp"
+            android:textColor="@color/Negro_0"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:background="@color/Negro_0"
+        android:layout_marginTop="29dp"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:layout_marginTop="29dp">
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VOLVER"
+            android:textStyle="bold"
+            android:textColor="@color/Blanco"
+            android:background="@drawable/bordeboton"
+            android:onClick="OnClick"/>
+
+    </LinearLayout>
+
+</LinearLayout>

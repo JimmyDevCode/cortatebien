@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".Fragments.RegistroActivity"
+    android:background="@color/Gris_4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:src="@drawable/ic_logo_5" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="290dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/registroUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:hint="@string/Usuario"
+            android:background="@drawable/borde_log_pass"
+            android:inputType="textPersonName"
+            android:textColorLink="#F7F1F1"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/registroContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:background="@drawable/borde_log_pass"
+            android:hint="@string/Contraseña"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp"
+            android:textColorLink="#131212" />
+        <EditText
+            android:id="@+id/registroCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:background="@drawable/borde_log_pass"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            android:textColorLink="#131212" />
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bordeboton"
+            android:gravity="center"
+            android:textColor="@color/Blanco"
+            android:text="@string/Registrar"
+            android:textSize="16sp"
+            android:onClick="OnClick"/>
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/Negro_0"
+            android:textStyle="bold"
+            android:background="@drawable/boton_style_2"
+            android:text="@string/Cancelar"
+            android:onClick="OnClick"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_menuPrincipal"
+            android:icon="@mipmap/ic_home_asset"
+            android:title="@string/menu_principal" />
+        <item
+            android:id="@+id/nav_menuPerfil"
+            android:icon="@drawable/ic_perfil"
+            android:title="@string/menu_perfil" />
+        <item
+            android:id="@+id/nav_menuReserva"
+            android:icon="@drawable/icono_reserva"
+            android:title="@string/menu_reservas" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_menuLogout"
+                android:icon="@mipmap/ic_exit_asset"
+                android:title="@string/menu_cerrar_sesion" />
+        </menu>
+    </item>
+
+</menu>

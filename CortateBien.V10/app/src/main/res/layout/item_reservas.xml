@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boton_style_2"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/miReservaEmpresa"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:text="Nombre empresa"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/Blanco"
+                android:background="@drawable/bordeboton"
+                android:padding="3dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/miReservaDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Direccion empresa"
+                    android:textStyle="italic|bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/Negro_0"
+                    android:padding="3dp"/>
+                <TextView
+                    android:id="@+id/miReservaUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="nombreUsuario"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/Negro_0"
+                    android:padding="3dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/miReservaDistrito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dsitrito empresa"
+                android:textStyle="italic|bold"
+                android:textSize="16sp"
+                android:textColor="@color/Negro_0"
+                android:padding="3dp"/>
+            <TextView
+                android:id="@+id/miReservaServicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre servicio"
+                android:background="@drawable/borde_log_pass"
+                android:textColor="@color/Negro_0"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="3dp"/>
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imagenReservaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="125dp" />
+            <TextView
+                android:id="@+id/miReservaDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripcion servicio"
+                android:textStyle="bold|italic"
+                android:background="@drawable/borde_log_pass"
+                android:textColor="@color/Negro_0"
+                android:textSize="16sp"
+                android:padding="3dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" S/. "
+                    android:textSize="16sp"
+                    android:textColor="@color/Verde"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/miReservaPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio servicio"
+                    android:textColor="@color/Rojo"
+                    android:padding="3dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="3dp">
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_calendario_30dp"/>
+                <TextView
+                    android:id="@+id/miReservaFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha Servicicio"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/Negro_0"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:background="@drawable/ic_relog_24dp"/>
+                <TextView
+                    android:id="@+id/miReservaHora"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Hora servicio"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/Negro_0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
